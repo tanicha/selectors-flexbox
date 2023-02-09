@@ -1,0 +1,30 @@
+/* descendant selector - parent -> descendent */
+
+#container .highlight {
+    color: green;
+}
+
+#container .highlight2 {
+    color: blue;
+}
+
+/* child selector - parent -> DIRECT child (no grandchildren) */
+
+#container > .highlight {
+    color: red;
+}
+
+/* adjacent sibling selector - firstElement + targetElement */
+
+h1 + p {
+    color: orange;
+}
+
+/* general sibling selector - */
+
+/* multiple selectors - firstElement + secondElement + thirdElement */
+
+h2, p, span {
+    font-family: 'Times New Roman', Times, serif;
+    color: purple;
+}
